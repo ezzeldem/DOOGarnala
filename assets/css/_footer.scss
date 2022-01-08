@@ -1,0 +1,107 @@
+.footer_sectoion {
+  background-color: rgba($min_dark_color, 1);
+  padding: 100px 0 60px;
+  .footer_text {
+    font-size: 16px;
+    font-family: $font_Regular;
+    @extend%trans_4;
+    color: rgba($white_color, 1);
+    &:not(a) {
+      padding: 0 0 10px;
+    }
+  }
+  .footer_list {
+    margin-bottom: 20px;
+    li {
+      padding: 0 0 10px;
+      &.button_li {
+        padding: 20px 0 0;
+      }
+      a {
+        &:hover {
+          color: rgba($gold_color, 1);
+        }
+      }
+
+      .button_box {
+        a {
+          color: rgba($white_color, 1) !important;
+          border-color: rgba($white_color, 1);
+        }
+      }
+    }
+  }
+
+  .footer_form {
+    display: flex;
+    position: relative;
+    input {
+      width: 93%;
+      padding: 10px 25px;
+      border: 0;
+      border-radius: 30px 0 0 30px;
+      font-family: $font_Medium;
+      background-color: rgba($gray_color, 0.5);
+      color: rgba($white_color, 1);
+      &::placeholder {
+        color: rgba($white_color, 1);
+      }
+    }
+    button {
+      border: 0;
+      padding: 10px 23px;
+      border-radius: 30px;
+      background-color: rgba($sub_color, 1);
+      color: rgba($white_color, 1);
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  .socile_list {
+    display: flex;
+    margin: 20px 0;
+    li {
+      padding: 0 20px 0 0;
+      a {
+        font-size: 24px;
+        @extend%trans_4;
+        color: rgba($white_color, 0.4);
+        &:hover {
+          color: rgba($white_color, 1);
+        }
+      }
+    }
+  }
+  .footer_img {
+    width: 70%;
+    margin-left: auto;
+    @media (max-width: 992px) {
+      width: 100%;
+      margin-left: unset;
+    }
+    .sercile {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media (max-width: 992px) {
+        justify-content: flex-start;
+      img{
+        padding: 0 20px 0;
+      }
+      }
+      img {
+        height: 100px;
+      }
+    }
+  }
+  .copyRight {
+    font-size: 14px;
+    font-family: $font_Regular;
+    padding: 110px 0 0;
+    color: rgba($gray_color, 1);
+    @media (max-width: 992px) {
+      padding: 30px 0 0;
+    }
+  }
+}
