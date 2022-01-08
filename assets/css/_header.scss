@@ -124,7 +124,7 @@
             padding: 20px 0 0;
           }
           &.button_li {
-            a{
+            a {
               color: rgba($white_color, 1) !important;
               border-color: rgba($white_color, 1);
             }
@@ -139,6 +139,12 @@
   }
 }
 
-.opne_menu {
-  right: 0 !important;
+@media (max-width: 772px) {
+  .header_section {
+    padding: 40px 20px 0;
+    &::after {
+      width: 281px;
+      height: 168px;
+    }
+  }
 }

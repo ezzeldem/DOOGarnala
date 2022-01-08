@@ -28,4 +28,21 @@ $(document).ready(function () {
 
   });
 
+
+
+
+  $('.plan_section .pakedg_tap_insed .nav-tabs .nav-link').click(function (e) {
+    e.preventDefault();
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+    data = $(this).data("tap");
+
+    $("#" + data).addClass('active');
+    $("#" + data).siblings().removeClass('active');
+
+
+
+  });
+
+
 });
