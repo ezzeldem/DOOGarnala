@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+  AOS.init();
 
   $('.header_section .opne_menu i').click(function (e) {
     e.preventDefault();
